@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Activity Tracker",
+  "version": "1.0",
+  "description": "Tracks browser activity and video watching time",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  }
+}
